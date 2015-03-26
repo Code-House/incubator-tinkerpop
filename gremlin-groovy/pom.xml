@@ -25,6 +25,10 @@ limitations under the License.
     </parent>
     <artifactId>gremlin-groovy</artifactId>
     <name>Gremlin Groovy: Gremlin for the Groovy Language</name>
+    <packaging>bundle</packaging>
+    <properties>
+        <osgi.export>org.apache.tinkerpop.gremlin.groovy.*</osgi.export>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>

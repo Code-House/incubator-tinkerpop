@@ -23,7 +23,19 @@ limitations under the License.
         <version>3.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>gremlin-core</artifactId>
+    <packaging>bundle</packaging>
     <name>Gremlin Core: The Primary Components of TinkerPop3</name>
+    <properties>
+        <osgi.import>
+            !com.jcabi.manifests,
+            com.esotericsoftware.kryo.*;resolution:=optional,
+            com.carrotsearch.hppc.*;resolution:=optional,
+            com.fasterxml.jackson.*;resolution:=optional,
+            org.yaml.snakeyaml.*;resolution:=optional,
+            *
+        </osgi.import>
+        <osgi.export>org.apache.tinkerpop.gremlin.*</osgi.export>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>

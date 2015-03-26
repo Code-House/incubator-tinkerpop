@@ -24,8 +24,11 @@ limitations under the License.
         <version>3.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>gremlin-algorithm</artifactId>
-    <url>http://gremlin.tinkerpop.com</url>
+    <packaging>bundle</packaging>
     <name>Gremlin Algorithms: Graph Computing Algorithms for TinkerPop3</name>
+    <properties>
+        <osgi.export>org.apache.tinkerpop.gremlin.algorithm.generator.*</osgi.export>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>

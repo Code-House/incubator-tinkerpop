@@ -24,7 +24,11 @@ limitations under the License.
         <version>3.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>tinkergraph-gremlin</artifactId>
+    <packaging>bundle</packaging>
     <name>TinkerGraph Gremlin: The Reference Implementation of TinkerPop3</name>
+    <properties>
+        <osgi.export>org.apache.tinkerpop.gremlin.tinkergraph.*</osgi.export>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.apache.tinkerpop</groupId>
